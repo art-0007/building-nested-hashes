@@ -6,7 +6,7 @@ def fifth_challenge
    :montague => {
       :patriarch => {name: "Lord Montague", age: "53"},
       :matriarch => {name: "Lady Montague", age: "54"},
-      :hero => {name: "Romeo", age: "15", status: "alive"},
+      :hero=> {name: "Romeo", age: "15", status: "alive"},
       :hero_friends => [
          {name: "Benvolio", age: "17", attitude: "worried"},
          {name: "Steven", age: "30", attitude: "confused"}
@@ -24,7 +24,8 @@ def fifth_challenge
   }
 
   #code your solution here:
-
+  epic_tragedy[:montague][:hero][:status] = "dead"
+  epic_tragedy[:capulet][:hero][:status] = "dead"
 
   #Don't touch the following line! The method must return our newly modified epic tragedy hash
   epic_tragedy
